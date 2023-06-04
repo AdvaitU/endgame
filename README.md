@@ -67,6 +67,12 @@ The next step was to start adding in the medium scale assets into the world. Thi
 
 ![Level with all the medium scale details added in](./Images/ScreenShot00022.png)
 
+### Making the world our own
+
+To then truly make the world our own, we created posters for post-apocalyptic shops, anti-sphere and pro-sphere propaganda, Raddington campaign posters, Erik Ten Haag posters and football posters for the ongoing match. These were created in a Soviet style using a range of Midjourney prompt-based generations edited to add detail, text, and noise and texture. Here's some of them. You can find all the posters in [this folder](./Gallery/Posters_and_Billboards/).
+
+<img src="./Images/splines.png" width = 200px>
+
 ### Tweaking and Twisting
 Then we added the NPCs, player pawns, AI agents, and decals to make the world more and more unique.    
 
