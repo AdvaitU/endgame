@@ -1,8 +1,6 @@
 # Endgame
 A video game demo created by Advait Ukidve and Mae Horak for Creative Making: Advanced Visualisation and Computational Environments for the MSc. Creative Computing at UAL CCI.    
-<sub>(May 2023)</sub>     
-   
-      
+<sub>(May 2023)</sub>         
       
 ### Two Sentence Summary
 Endgame is a video game based in a post-apocalyptic fictional London 50 years after the bombs fell in 2019. The game lets you take the control of AI-Football Harold as you navigate a post-nuclear fictional London gathering intelligence from your network of football-AI spy colleagues and report to release the overseer Erik Ten Haag from his long imprisonment in a telephone box.
@@ -15,7 +13,12 @@ The core idea of Endgmae was to explore alternative control systems that tie in 
 - [Controller Testing and Prototyping]()
 - [Game Demo and Process]()
 
-# Documentation
+### This Repository
+- [Arduino_Code]() contains the Arduino code used to carry out the functionality. This includes [Accelerometer.h](), the custom built library for the project, a [Readme]() containg attributions, and [accelerometer_test.ino]() containing the final code.
+- The Gallery folder contains final demonstration images of Endgame
+- The Images Folder contains images used in this readme documenting the process of creating Endgame
+
+# Project Documentation
 
 ## The World
 ### The Idea
