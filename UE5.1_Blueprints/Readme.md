@@ -7,4 +7,4 @@ All process documentation can be found in the Readme file in the root directory.
 - BP_SerialCom_v4_UE510 is an actor Blueprint for the SerialCommunication Actor in the level.
 
 ### BP_SerialCom_v4_UE510
-The Blueprint included is an edited version of Ramiro Montes De Oca's Serial COM Plugin v4.5.1.1 for Unreal Engine 5.1 available under the MIT License. The License is included in this directory as posited by the author.
+The Blueprint included is an edited version of Ramiro Montes De Oca's [Serial COM Plugin v4.5.1.1 for Unreal Engine 5.1](https://github.com/videofeedback/Unreal_Engine_SerialCOM_Plugin/tree/main) available under the MIT License. A copy of the [original license](https://github.com/videofeedback/Unreal_Engine_SerialCOM_Plugin/blob/main/LICENSE) is included in this directory as posited by the author.
