@@ -70,11 +70,15 @@ The next step was to start adding in the medium scale assets into the world. Thi
 ### Tweaking and Twisting
 Then we added the NPCs, player pawns, AI agents, and decals to make the world more and more unique.    
 
-![level with all the medium scale details added in]()
+![Level with all the medium scale details added in]()
+
+Following this, we added foliage to the world and saw it come to life in a way it simply hadn't before.
+
+![Level with Foliage added in]()
 
 Finally, we added the sounds, lights, environmental effects and camera postprocessing effects to create the world the game is played in.   
 
-![level with all the medium scale details added in]()   
+![Level with sound areas, lighting, and environmental effects added in]()   
 
 ## Getting code to do the thing
 ### Arduino
