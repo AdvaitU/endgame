@@ -1,5 +1,5 @@
 # Endgame
-A video game demo created by Advait Ukidve and Mae Horak for Creative Making: Advanced Visualisation and Computational Environments for the MSc. Creative Computing at UAL CCI.    
+A video game demo created by [Advait Ukidve](https://github.com/AdvaitU) and [Mae Horak](https://github.com/mkh7878) for Creative Making: Advanced Visualisation and Computational Environments for the MSc. Creative Computing at UAL CCI.    
 <sub>(May 2023)</sub>         
       
 ### Two Sentence Summary
