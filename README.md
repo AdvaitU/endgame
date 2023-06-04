@@ -1,6 +1,6 @@
 # Endgame
 A video game demo created by [Advait Ukidve](https://github.com/AdvaitU) and [Mae Horak](https://github.com/mkh7878) for Creative Making: Advanced Visualisation and Computational Environments for the MSc. Creative Computing at UAL CCI.    
-<sub>(May 2023)</sub>         
+<sub>(May 2023)</sub>    
       
 ### Two Sentence Summary
 Endgame is a video game based in a post-apocalyptic fictional London 50 years after the bombs fell in 2019. The game lets you take the control of AI-Football Harold as you navigate a post-nuclear fictional London gathering intelligence from your network of football-AI spy colleagues and report to release the overseer Erik Ten Haag from his long imprisonment in a telephone box.
@@ -71,10 +71,13 @@ The next step was to start adding in the medium scale assets into the world. Thi
 
 To then truly make the world our own, we created posters for post-apocalyptic shops, anti-sphere and pro-sphere propaganda, Raddington campaign posters, Erik Ten Haag posters and football posters for the ongoing match. These were created in a Soviet style using a range of Midjourney prompt-based generations edited to add detail, text, and noise and texture. Here's some of them. You can find all the posters in [this folder](./Gallery/Posters_and_Billboards/).
 
-<img src="./Images/splines.png" width = 200px>
+<img src="./Gallery/Posters_and_Billboards/nuclearfallout.jpg" width = 500px> <img src="./Gallery/Posters_and_Billboards/radiation.jpg" width = 500px>
+<img src="./Gallery/Posters_and_Billboards/paddington.jpg" width = 500px> <img src="./Gallery/Posters_and_Billboards/uranus.jpg" width = 500px>
+<img src="./Gallery/Posters_and_Billboards/diner.jpg" width = 500px> <img src="./Gallery/Posters_and_Billboards/radiant resort.jpg" width = 500px>
+<img src="./Gallery/Posters_and_Billboards/spheres2.jpg" width = 250px> <img src="./Gallery/Posters_and_Billboards/speeddating.jpg" width = 250px> <img src="./Gallery/Posters_and_Billboards/mutantpowerhour.jpg" width = 250px> <img src="./Gallery/Posters_and_Billboards/bowtotheorb.jpg" width = 240px>
 
 ### Tweaking and Twisting
-Then we added the NPCs, player pawns, AI agents, and decals to make the world more and more unique.    
+Then we added the decals to the world along with decals for surfaces like footpaths, stop signs, arrows, textures, blemishes, etc. to make the world more unique and believable.    
 
 ![Level with all the medium scale details added in](./Images/ScreenShot00024.png)
 
