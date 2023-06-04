@@ -1,3 +1,16 @@
+// Accelerometer Class - To be used for the Adafruit BNO055 Sensor interfacing with an Arduino.
+// Author: Advait Ukidve (a.ukidve0220221@arts.ac.uk)
+// License: This code is intended to be completely public domain and to be used under the Creative Commons CC0 License. No attribution is required, but any is welcome :)
+
+/* Interfacing with an Arduino Leonardo over I2C:
+BNO055 -----  Arduino
+Vin    ---->  5V
+GND    ---->  GND
+SDA    ---->  SDA
+SCL    ---->  SCL
+*/
+
+
 #include <Wire.h>                  // For communication with I2C device - the BNO055 sensor
 #include <Adafruit_Sensor.h>       // Adafruit Unified Sensor Library - https://github.com/adafruit/Adafruit_Sensor 
 #include <Adafruit_BNO055.h>       // Adafruit BNO055 Library - https://github.com/adafruit/Adafruit_BNO055 
