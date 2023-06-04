@@ -2,6 +2,7 @@
 
 The following is a list of resources I used to learn and design the Arduino sketch and the Accelerometer Class Library:   
 You can also find the attributions to included libraries in the Accelerometer.h class. All libraries used in the code are Open Source (Apache 2.0 License/MIT License/GNU Public License).
+This directory includes [Accelerometer.h](./Accelerometer.h), the custom built library for the project and [accelerometer_test.ino](./accelerometer_test.ino) containing the final code.
 
 ## Technical Tools
 - **Wire.h** - For communication with I2C devices - the BNO055 sensor [(Source Code)](https://github.com/codebendercc/arduino-library-files/blob/master/libraries/Wire/Wire.h)
