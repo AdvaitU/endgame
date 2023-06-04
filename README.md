@@ -14,7 +14,7 @@ The core idea of Endgmae was to explore alternative control systems that tie in 
 - [Game Demo and Process]()
 
 ### This Repository
-- [Arduino_Code](./Arduino_Code) contains the Arduino code used to carry out the functionality. This includes [Accelerometer.h](./Arduino_Code/Accelerometer.h), the custom built library for the project, a [readme.md](./Arduino_Code/readme.md) containing attributions, and [accelerometer_test.ino](https://github.com/AdvaitU/endgame/blob/main/Arduino_Code/accelerometer_test.ino) containing the final code.
+- [Arduino_Code](./Arduino_Code) contains the Arduino code used to carry out the functionality and a README explaining components. 
 - The Gallery folder contains final demonstration images of Endgame
 - The Images Folder contains images used in this readme documenting the process of creating Endgame
 
