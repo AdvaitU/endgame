@@ -105,7 +105,7 @@ To build out the gameplay, we used an accelerometer connected to an Arduino comm
 This first step was to create the Arduino part of the control system. For this, we used an [Adafruit BNO055 9-Axis Absolute Orientation Sensor](https://learn.adafruit.com/adafruit-bno055-absolute-orientation-sensor/overview). The BNO055 is made easy to use by the Adafruit Unified Sensor and the Adafruit BNO055 libraries with communication with the Arduino managed over I2C. Unfortunately, the 'raw' values recieved for the BNO055 are formatted irregularyl with the x-axis (rotation along horizontal plane) mapped between 0 and 400, and the z-axis (rotation along vertical plane perpendicular to the player) mapped from -90 to 90.
 In order to counter this problem as well as establish a modular string construction system to push to Serial, we created the [Accelerometer.h class](./Arduino_Code/Accelerometer.h)   
 
-![Accelerometer.h class](./Images/ard1.png)   ![Accelerometer.h class](./Images/ard11.png)  ![Accelerometer.h class](./Images/ard111.png)  
+<img src="./Images/ard1.png" width = 400px>  ![Accelerometer.h class](./Images/ard11.png)  ![Accelerometer.h class](./Images/ard111.png)  
 
 The Accelerometer class includes functions that allow one to map x,y, and z axis rotation to more usable ranges (such as 0 to 360 degrees), set the frequency of communication over serial, create comma-separated strings to be sent over serial modularly, etc. (Complete documentation is in the header file).   
 Through this class, we were able to send the x-axis and z-axis rotation (the only two required to create the control system) in the format "x,z" - each mapped from 0 to 720 for increased fidelity.
@@ -128,7 +128,7 @@ The gameplay is created using multiple different blueprints:
 #### 1. [BP_SerialCom_v4_UE510](./UE5.1_Blueprints/BP_SerialCom_v4_UE510.uasset)
 To establish communication over Serial, we used [Ramiro Montes De Oca's](https://github.com/videofeedback) open source [SerialCOM Plugin](https://github.com/videofeedback/Unreal_Engine_SerialCOM_Plugin) for Unreal Engine. This plugin comes bundled with functions tied to Gameplay Begins and Event Ticks that open up the Serial Port in Unreal and establish two-way communication with the Arduino. Building off of these functions, we created a custom sequence of code triggered on every Event Tick:   
 
-<img src="./Images/ard4.png" width = 500px> <img src="./Images/ard5.png" width = 500px>
+<img src="./Images/ard4.png" width = 1000px> <img src="./Images/ard5.png" width = 1000px>
 
 When the event tick is registered, the code reads a single line from the Serial Port and splits the string at the comma to give two distinct values - AccX and AccY - converted to floats. These two values are then cast to the B_Player class blueprint and written in the B_Player variables xVal and yVal respectively.
 
@@ -137,7 +137,7 @@ When the event tick is registered, the code reads a single line from the Serial 
 ##### Camera Rotation
 B_Player receives two separate values from the SerialCom blueprint. First, it divides both by 2 to normalise them in the required range of 0-360 as floats. The values are fed into a rotator object directly (as the y-axis and z-axis rotations - Unreal follows different defaults of axis names apparently). The values are also saved as lastValX and lastValY which create another rotator object together. On every Event Tick, the two created rotators (newly recieved values and previous values) are LERP-ed to create a smoother camera rotation around the player.   
 
-<img src="./Images/ard6.png" width = 500px>   
+<img src="./Images/ard6.png" width = 1000px>   
 
 ##### Camera Snapping for Better Viewing
 The camera is set to a standard spring arm of 2.5 metres in the Unreal level. If an object is detected between the camera and the player's mesh, the camera snaps to the player mesh instead creating a first person view. This helps when the player wants to look at objects high up in the level that is otherwise impossible with a spring arm of the length.   
@@ -145,7 +145,7 @@ The camera is set to a standard spring arm of 2.5 metres in the Unreal level. If
 ##### Character Movement
 In order to translate forward, the blueprint checks whether yVal (vertical rotation perpendicular to player's eyeballs) is less than 170 degrres from the ground. If it is less than 170, the ball starts translating along the actor's forward axis at a scale of 1.0. If the tilt goes below 150 degrees, the scale is shifted to 2.0 and the ball translates much faster.
 
-<img src="./Images/ard7.png" width = 500px>   
+<img src="./Images/ard7.png" width = 1000px>   
 
 #### 3. B_Level
 
