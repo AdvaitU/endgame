@@ -98,7 +98,7 @@ To build out the gameplay, we used an accelerometer connected to an Arduino comm
 - After testing a little, we decided to remove any rotation along the y-axis (Vertical plane parallel to player's eyeballs) as the practicality of having the ball replicate movement along all three axes was causing confusing visuals and significantly more annoying controls. 
 - We also decided that in order to move forward, the ball would have to be tilted away from the player akin to the following sketch:
 
-<img src="./Images/ball_sketch.png">
+<img src="./Images/ball_sketch.PNG" width = 500px> 
 
 ### Arduino
 
@@ -114,7 +114,7 @@ Through this class, we were able to send the x-axis and z-axis rotation (the onl
 
 Next, we worked on creating an actual interface to play the game. The interface is intentionally simple - taking the form of a sphere that one can hold upright and move to mirror the movement of the ball in-game. We designed and 3D printed the controller using Fusion 360 and Ultimaker Cura.   
 
-![Controller Fusion 360 Model](./Images/ard2.png)  ![3D Printed controller with BNO055 fit in](./Images/ard3.png)     
+<img src="./Images/ard2.PNG" width = 500px> <img src="./Images/ard2.PNG" width = 500px>
 
 ### Unreal Engine
 
