@@ -135,7 +135,7 @@ When the event tick is registered, the code reads a single line from the Serial 
 #### 2. [B_Player](./UE5.1_Blueprints/B_Player.uasset)
 
 ##### Camera Rotation
-B_Player receives two separate values from the SerialCom blueprint. First, it divides both by 2 to normalise them in the required range of 0-360 as floats. The values are fed into a rotator object directly (as the y-axis and z-axis rotations - Unreal follows different defaults of axis names apparently). The values are also saved as lastValX and lastValY which create another rotator object together. On every Event Tick, the two created rotators (newly recieved values and previous values) are LERP-ed to create a smoother camera rotation around the player.   
+B_Player receives two separate values from the SerialCom blueprint. First, it divides both by 2 to normalise them in the required range of 0-360 as floats. The values are fed into a rotator object directly (as the y-axis and z-axis rotations - Unreal follows different defaults of axis names apparently). The values are also saved as lastValX and lastValY which create another rotator object together. On every Event Tick, the two created rotators (newly recieved values and previous values) are LERP-ed to create a smoother camera rotation around the player. Huge thanks to Lindsay Schardon's tutorial on Game Dev Academy for helping me create this. You can find it [here](https://gamedevacademy.org/unreal-engine-camera-tutorial/).
 
 <img src="./Images/ard6.png" width = 1000px>   
 
