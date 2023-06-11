@@ -39,7 +39,7 @@ This project was completed by Advait Ukidve and Mae Horak as a joint effort for 
 
 ## Building the World
 
-To build out the level, we used a top down method. We created the world with assets in the following order (Check out a quick video of the world getting built [here]():
+To build out the level, we used a top down method. We created the world with assets in the following order (Check out a quick video of the world getting built [here](https://youtu.be/DlGWNB3HCrw):
 1. Blockout Level
 2. Roads and Topology
 3. Buildings
