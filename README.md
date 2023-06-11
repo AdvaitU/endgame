@@ -62,21 +62,21 @@ The map was divided into 5-6 main zones - the football field, the business park,
 ### Building the Landscape - Large Scale Meshes
 The next thing to get right was the large scale assets of the city. We started out by laying down the roads by creating Landscape Splines and filling them in with an edited version of [this road mesh](https://sketchfab.com/3d-models/road-4eae882d72c24a789d83655f952008ea) complete with surface texture and painted middle lines (Huge thanks to [this tutorial](https://www.youtube.com/watch?v=eO2HUsC7dHY)). 
 
-![Level with splines on a landscape](./Images/splines.png)   
+<img src="./Images/splines.png" width = 800px>
 
 Next, we surrounded the roads with footpaths and guard rails wherever appropriate (from Quixel Bridge).
 
-![Level with landscape, roads, footpaths, and fences](./Images/ScreenShot00000.png)   
+<img src="./Images/ScreenShot00000.png" width = 500px>
 
 Next, we used [PurePolygon's Modular Building Set](https://www.unrealengine.com/marketplace/en-US/product/modular-building-set) to create buildings with differing heights, footprints, and architectural styles to create a cohesive looking cityscape. The model for the church was thanks to [KitBash3D's](https://kitbash3d.com/) free asset library.
 
-![Level with buildings filled in](./Images/ScreenShot00007.png)   
+<img src="./Images/ScreenShot00007.png" width = 500px>
 
 ### Adding Smaller Scale Assets to Make the World Come to Life
 
 The next step was to start adding in the medium scale assets into the world. This included destroyed vehicles, telephone boxes, trash bins, bus stops, street lamps, park lamps, decorative fences, statues, speakers, cupboards, park benches, street signs, fences, etc.
 
-![Level with all the medium scale details added in](./Images/ScreenShot00022.png)
+<img src="./Images/ScreenShot00022.png" width = 500px>
 
 ### Making the world our own
 
@@ -90,15 +90,14 @@ To then truly make the world our own, we created posters for post-apocalyptic sh
 ### Tweaking and Twisting
 Then we added the decals to the world along with decals for surfaces like footpaths, stop signs, arrows, textures, blemishes, etc. to make the world more unique and believable.    
 
-![Level with all the medium scale details added in](./Images/ScreenShot00024.png)
+<img src="./Images/ScreenShot00024.png" width = 500px>
 
 Following this, we added foliage to the world and saw it come to life in a way it simply hadn't before.
 
-![Level with Foliage added in](./Images/ScreenShot00026.png)
+<img src="./Images/ScreenShot00026.png" width = 500px>
 
 Finally, we added the sounds, lights, environmental effects and camera postprocessing effects to create the world the game is played in.   
 
-![Level with sound areas, lighting, and environmental effects added in]()   
 
 ## Getting code to do the thing
 
