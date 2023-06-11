@@ -161,17 +161,25 @@ Additionally, the Blueprint also handles the Minimap functionality. For this, we
 (Thanks to Gorka Games' [tutorial](https://www.youtube.com/watch?v=VzFAujhMdEA) for this)
 
 
-#### 3. B_Launchpad
+#### 3. [B_Launchpad](./UE5.1_Blueprints/BP_Launchpad.uasset)
 
 The game also contains launch pads in the form of manhole covers that launch Harold into the sky in order to reach his targets, some of whom sit on rooftops. The launchpad contains a manhole cover as the mesh with a collision sphere around it roughly the same diameter. On the overlap of the B_Player, it casts to B_Player and calls an inbuilt function called LaunchCharacter to launch Harold into the sky at a height randomised between 1 and 4 units.   
 <img src="./Images/ard10.png" width = 500px>  <img src="./Images/ard11.png" width = 500px>  
 (Thanks to Buvesa Game Development's [tutorial](https://www.youtube.com/watch?v=v_8qILc9wrI) for this)
 
-#### 4. x_Ball   
+#### 4. [x_Ball](./UE5.1_Blueprints/a_Ball.uasset)
 
 Finally, the x_Ball (a_Ball, b_Ball...f_Ball + eth_Ball) Blueprints control the characters Harold has to meet throught the course of the game. Each ball except eth_Ball follows a similar scripts. Character meshes are accompannied by large collission spheres that set off events when the player starts and stops overlapping with them. On the beginning of play, each blueprint instantiates its respective dialogue widget blueprint and adds it to the viewport with default visibility off. On collission with the player, the Blueprint casts to B_Player and sets the visibility on and changes the respective boolean for recording the collision from false to true. On the end of overlapping, another event is called which sets the visibility back to hidden.   
-eth_ball handles the game end state. It has the same functionality but only activates its dialogue after checking to see if all the booleans in the character collission array are true. This ensures that the player can speak to Erik Ten Haag and end the demo after they have interacted with every other agent and got the information necessary for the venture.   
+[eth_ball](./UE5.1_Blueprints/eth_Ball.uasset) handles the game end state. It has the same functionality but only activates its dialogue after checking to see if all the booleans in the character collission array are true. This ensures that the player can speak to Erik Ten Haag and end the demo after they have interacted with every other agent and got the information necessary for the venture.   
 
 <img src="./Images/ard12.png" width = 500px>  <img src="./Images/ard13.png" width = 500px>  <img src="./Images/ard14.png" width = 1000px>  
 
 (Thanks to Jake Ogden's wonderful [tutorial](https://www.youtube.com/watch?v=PcG0l3fPbps) for this)
+
+## Sound Design
+
+Thanks to Kiri Rodenburg for voicing every single character in the game - each in a unique voice and accent. 
+<img src="./Images/ard16.png" width = 1000px>  
+We edited the recording to trim and modulate the pitch and triggered them in the same blueprints that triggered dialogue popups.
+
+We also added ambient sounds, and sound effects as appropriate throughout the world to create the game's atmosphere.
