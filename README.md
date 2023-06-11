@@ -9,9 +9,9 @@ Endgame is a video game based in a post-apocalyptic fictional London 50 years af
 The core idea of Endgame was to explore alternative control systems that tie in to the world of the game and examine how a player's perception adjusts to the affordances of their controls. The game runs using a custom built accelerometer based controller that lets the player assume the role of a ball both in game and in how they control it. The controller is built using an [Adafruit BNO055 9-Axis Absolute Orientation Sensor](https://learn.adafruit.com/adafruit-bno055-absolute-orientation-sensor/overview) connected to an Arduino Leonardo that communicates with [Unreal Engine 5.1](https://www.unrealengine.com/en-US/) real-time over Serial (thanks to [Ramiro Montes De Oca's](https://github.com/videofeedback) [SerialCOM Plugin](https://github.com/videofeedback/Unreal_Engine_SerialCOM_Plugin) for Unreal Engine).
 
 ### Video Documentation
-- [Presentation Video]()
-- [Controller Testing and Prototyping]()
-- [Game Demo and Process]()
+- [Game Demonstration and Worldbuilding]()
+- [Technical Demonstration - Endgame in Action](https://youtu.be/DlGWNB3HCrw)
+- [Technical Documentation and Explanation](https://youtu.be/J3sBT4w4Pwg) (~11 Minutes long)
 
 ### This Repository
 - [Arduino_Code](./Arduino_Code) contains the Arduino code used to carry out the functionality and a README explaining components. 
@@ -164,7 +164,9 @@ Additionally, the Blueprint also handles the Minimap functionality. For this, we
 #### 3. [B_Launchpad](./UE5.1_Blueprints/BP_Launchpad.uasset)
 
 The game also contains launch pads in the form of manhole covers that launch Harold into the sky in order to reach his targets, some of whom sit on rooftops. The launchpad contains a manhole cover as the mesh with a collision sphere around it roughly the same diameter. On the overlap of the B_Player, it casts to B_Player and calls an inbuilt function called LaunchCharacter to launch Harold into the sky at a height randomised between 1 and 4 units.   
-<img src="./Images/ard10.png" width = 500px>  <img src="./Images/ard11.png" width = 500px>  
+
+<img src="./Images/ard10.png" width = 500px>  <img src="./Images/arda11.png" width = 500px>    
+
 (Thanks to Buvesa Game Development's [tutorial](https://www.youtube.com/watch?v=v_8qILc9wrI) for this)
 
 #### 4. [x_Ball](./UE5.1_Blueprints/a_Ball.uasset)
