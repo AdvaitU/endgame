@@ -17,9 +17,9 @@ The core idea of Endgame was to explore alternative control systems that tie in 
 
 ### For Submission
 This project was completed by Advait Ukidve and Mae Horak as a joint effort for the Creative Making: Advanced Visualisation and Computational Environments for the MSc. Creative Computing at UAL CCI. We both worked in various capacities across game design, development, prototyping, asset creation, etc. collaboratively:
-**Both:** Unreal Blueprint Design, Level Design, Worldbuilding, Gameplay Design and Testing
-**Advait:** Arduino programming, 3D Printing and Prototyping
-**Mae:** Sound Design, 3D Asset Creation.
+**Both:** Unreal Blueprint Design, Worldbuilding, Gameplay Design and Testing
+**Advait:** Arduino programming, Level Design, 3D Printing and Prototyping
+**Mae:** Sound Design, 3D Asset Creation, 2D Visual Design.
 
 
 ### This Repository
