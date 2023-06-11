@@ -102,7 +102,7 @@ To build out the gameplay, we used an accelerometer connected to an Arduino comm
 
 ### Technical Overview
 
-<img src="./Images/ard15.png" width = 1000px>  
+<img src="./Images/IMG_1788.PNG" width = 1000px>  
 
 ### Arduino
 
