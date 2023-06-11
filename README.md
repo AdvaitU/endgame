@@ -100,6 +100,10 @@ To build out the gameplay, we used an accelerometer connected to an Arduino comm
 
 <img src="./Images/ball_sketch.PNG" width = 500px> 
 
+### Technical Overview
+
+<img src="./Images/ard15.png" width = 1000px>  
+
 ### Arduino
 
 This first step was to create the Arduino part of the control system. For this, we used an [Adafruit BNO055 9-Axis Absolute Orientation Sensor](https://learn.adafruit.com/adafruit-bno055-absolute-orientation-sensor/overview). The BNO055 is made easy to use by the Adafruit Unified Sensor and the Adafruit BNO055 libraries with communication with the Arduino managed over I2C. Unfortunately, the 'raw' values recieved for the BNO055 are formatted irregularyl with the x-axis (rotation along horizontal plane) mapped between 0 and 400, and the z-axis (rotation along vertical plane perpendicular to the player) mapped from -90 to 90.
@@ -122,8 +126,9 @@ Next, we created a separate Unreal Engine project to create the Blueprints neces
 
 The gameplay is created using multiple different blueprints:
 1. **BP_SerialCom_v4_UE510** - Handles Serial Communication and is placed as an invisible actor in the level.
-2. **B_Player** - Handles player movement and receives input from BP_SerialCom_v4_UE510
-3. **B_Level** - Handles other functionality in the level as the player collides with it.
+2. **B_Player** - Handles player movement, camera control, and minimap widget and receives input from BP_SerialCom_v4_UE510
+3. **B_Launchpad** - Handles other functionality in the level as the player collides with it.
+4. **x_Ball** - Collection of actor Blueprints that handle the other Ball charcaters and their dialogues
 
 #### 1. [BP_SerialCom_v4_UE510](./UE5.1_Blueprints/BP_SerialCom_v4_UE510.uasset)
 To establish communication over Serial, we used [Ramiro Montes De Oca's](https://github.com/videofeedback) open source [SerialCOM Plugin](https://github.com/videofeedback/Unreal_Engine_SerialCOM_Plugin) for Unreal Engine. This plugin comes bundled with functions tied to Gameplay Begins and Event Ticks that open up the Serial Port in Unreal and establish two-way communication with the Arduino. Building off of these functions, we created a custom sequence of code triggered on every Event Tick:   
@@ -147,5 +152,26 @@ In order to translate forward, the blueprint checks whether yVal (vertical rotat
 
 <img src="./Images/ard7.png" width = 1000px>   
 
-#### 3. B_Level
+##### Minimap
 
+Additionally, the Blueprint also handles the Minimap functionality. For this, we created an orthographic camera that sits above the player and is invisible in the scene to the player camera. This camera captures the live view from its position and relays it to a widget blueprint containing the captured footage as a texture. This widget blueprint is initialised from B_Player on game start and updated every tick.
+
+<img src="./Images/ard8.png" width = 500px>   <img src="./Images/ard9.png" width = 500px>  
+
+(Thanks to Gorka Games' [tutorial](https://www.youtube.com/watch?v=VzFAujhMdEA) for this)
+
+
+#### 3. B_Launchpad
+
+The game also contains launch pads in the form of manhole covers that launch Harold into the sky in order to reach his targets, some of whom sit on rooftops. The launchpad contains a manhole cover as the mesh with a collision sphere around it roughly the same diameter. On the overlap of the B_Player, it casts to B_Player and calls an inbuilt function called LaunchCharacter to launch Harold into the sky at a height randomised between 1 and 4 units.   
+<img src="./Images/ard10.png" width = 500px>  <img src="./Images/ard11.png" width = 500px>  
+(Thanks to Buvesa Game Development's [tutorial](https://www.youtube.com/watch?v=v_8qILc9wrI) for this)
+
+#### 4. x_Ball   
+
+Finally, the x_Ball (a_Ball, b_Ball...f_Ball + eth_Ball) Blueprints control the characters Harold has to meet throught the course of the game. Each ball except eth_Ball follows a similar scripts. Character meshes are accompannied by large collission spheres that set off events when the player starts and stops overlapping with them. On the beginning of play, each blueprint instantiates its respective dialogue widget blueprint and adds it to the viewport with default visibility off. On collission with the player, the Blueprint casts to B_Player and sets the visibility on and changes the respective boolean for recording the collision from false to true. On the end of overlapping, another event is called which sets the visibility back to hidden.   
+eth_ball handles the game end state. It has the same functionality but only activates its dialogue after checking to see if all the booleans in the character collission array are true. This ensures that the player can speak to Erik Ten Haag and end the demo after they have interacted with every other agent and got the information necessary for the venture.   
+
+<img src="./Images/ard12.png" width = 500px>  <img src="./Images/ard13.png" width = 500px>  <img src="./Images/ard14.png" width = 1000px>  
+
+(Thanks to Jake Ogden's wonderful [tutorial](https://www.youtube.com/watch?v=PcG0l3fPbps) for this)
