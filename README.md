@@ -12,7 +12,7 @@ The core idea of Endgame was to explore alternative control systems that tie in 
 ### Video Documentation
 - [Game Demonstration and Worldbuilding]() - () This video is a demonstration of the Game Design and World with extended lore, story setting, etc. with captured in-engine and in-game playthrough footage.
 - [Technical Demonstration - Endgame in Action](https://youtu.be/DlGWNB3HCrw) - (~6 minutes) This video includes a demonstration of the spherical controller designed for the game in action along with captured in-engine footage + Level Design walkthroughs
-- [Technical Documentation and Explanation](https://youtu.be/J3sBT4w4Pwg) - (~12 Minutes long) This video is the extended technical documentation of the project and goes through a technical overview, the Arduino code, and all the Unreal Engine Blueprints required to create the game.
+- [Technical Documentation - How We Built It](https://youtu.be/J3sBT4w4Pwg) - (~12 Minutes long) This video is the extended technical documentation of the project and goes through a technical overview, the Arduino code, and all the Unreal Engine Blueprints required to create the game.
 
 
 ### This Repository
