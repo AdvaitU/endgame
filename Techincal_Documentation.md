@@ -1,4 +1,5 @@
-# Getting code to do the thing
+# Technical Documentation
+(Getting code to do the thing)   
 
 To build out the gameplay, we used an accelerometer connected to an Arduino communicating over Serial with Unreal Engine Blueprints to form the control system. Alongside this, other gameplay elements such as jumppads, popups, and platforming were also built using Blueprints.
 
