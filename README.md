@@ -19,8 +19,8 @@ The core idea of Endgame was to explore alternative control systems that tie in 
 - [Worldbuilding](Worldbuilding.md) contains the lore we created for the world along with the extended story of the demo, and screenshots in sequence of building the level in Unreal Engine.
 - [Technical Documentation](Technical_Documentation.md) contains detailed explanation of the code across platforms explained with screenshots
 - [Arduino_Code](./Arduino_Code) contains the Arduino code used to carry out the functionality and a README explaining components. 
-- The [Gallery](./Gallery/) Folder contains final demonstration images of Endgame
-- The [Images](./Images/) Folder contains images used in this readme documenting the process of creating Endgame.
+- The [Gallery](./Gallery/) Folder contains final demonstration images of Endgame (displayed below)
+- The [Images](./Images/) Folder contains images used other readmes documenting the process of creating Endgame.
 - [UE5.1_Blueprints](./UE5.1_Blueprints/) contains all the important Blueprints in the project as uasset files. These can be opened and reused in Unreal Engine 5.1.
 - [AssetAttribution.md](AssetAttribution.md) contains credits to all authors whose wark was used in/learned from for the project.
 
